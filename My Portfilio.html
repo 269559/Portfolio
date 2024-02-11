@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        }
+        
+        center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+        
+        header, nav, section, table, form, footer {
+        margin: 0;
+        padding: 20px;
+        }
+        
+        header {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        }
+        
+        nav {
+        background-color: #2c3e50;
+        text-align: center;
+        }
+        
+        nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        }
+        .navbar-icon {
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px;
+}
+
+section img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        }
+        
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+        
+        th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        }
+        
+        th {
+        background-color: #3498db;
+        color: #fff;
+        }
+        
+        h2, h3, h4, h5 {
+        color: #3498db;
+        }
+        
+        
+        a {
+        color: #3498db;
+        text-decoration: none;
+        }
+        
+        a:hover {
+        text-decoration: underline;
+        }
+        
+        form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 20px auto;
+        }
+        
+        label {
+        margin-bottom: 8px;
+        }
+        
+        input {
+        padding: 10px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        }
+        
+        footer {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        }
+        
+        
+        </style> 
+</head>
+<body>
+   
+        <header>
+            <h1> FEKIH SABER</h1><br>
+            <h1>software development student</h1>
+        </header>
+    <hr>
+    <!--Creation de navbar-->
+    <nav>
+        <a href="#Home">
+            <img src="./" alt="Home Icon" class="navbar-icon"> Home
+        </a>
+        <a href="#About">
+            <img src="./profile-circle2-512.webp" alt="About Icon" class="navbar-icon"> About
+        </a>
+        <a href="#Education">
+            <img src="./education-icon-vector-20742943.jpg" alt="Education Icon" class="navbar-icon"> Education
+        </a>
+        <a href="#Resume">
+            <img src="./images.png" alt="Resume Icon" class="navbar-icon"> Resume
+        </a>
+        <a href="#Contact">
+            <img src="./455705.png" alt="Contact Icon" class="navbar-icon"> Contact
+        </a>
+    </nav>
+    
+            <!--Creation de sections-->
+
+    <section id="Home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi guys:This is me</p>
+            <!--Insertion d'une image-->
+
+        <img src="./WhatsApp Image 2023-12-13 at 02.30.16.jpeg"  width="300" height="200">
+    </section>
+
+    <section id="About">
+        <h2>About Me</h2>
+        <div>Hello! I'm an enthusiastic and dedicated individual who has undergone a remarkable<br> 
+            transition from studying physics to venturing into the dynamic world of software development.<br>
+            Fueled by a profound passion for technology and coding, I recognized the boundless <br>
+            opportunities for innovation in the software realm. Eager to enhance my skills, I've <br>
+            committed myself to a software development Bootcamp, guided by the expertise of mentors like<br>
+            like Ms. Sameh. Despite my initial background in physics, I am determined to emerge as <br>
+            a proficient full-stack developer. This journey not only signifies a shift in my career <br>
+            trajectory but also reflects my proactive choice to illuminate a new and exciting professional <br>
+            path. I tackle challenges with enthusiasm, always striving to learn and grow in this ever-evolving field.
+        </div>
+                    <!--Insertion d'un video-->
+
+        <video width="300" height="200" controls>
+            <source src="./WhatsApp Video 2024-01-23 at 17.04.32.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="Education">
+        <h3>Education Experience</h3>
+                    <!--Creation de tableau-->
+
+        <table>
+            <tr>
+                <th> Educational Level</th>
+                                <th>Etablissement</th>
+                                <th>Perriod</th>
+                            </tr>
+                            <tr>
+                                <td>Level 1</td>
+                                <td>Primary School A.Chebbi</td>
+                                <td>2006-12</td>
+                            </tr>
+                            <tr>
+                                <td>Level 2</td>
+                                <td>Hay Mahragene Prep.School</td>
+                                <td>2012-15</td>
+                            </tr>
+                            <tr>
+                                <td>Level 3</td>
+                                <td>Hay Mahragene High.School</td>
+                                <td>2015-19</td>
+                            </tr>
+                            <tr>
+                                <td>Level 4</td>
+                                <td>FSB</td>
+                                <td>2019-22</td>
+                            </tr>        </table>
+    </section>
+
+    <section id="Resume">
+        <h4>Resume</h4>
+                    <!--Insertion d'un fichier pdf-->
+
+        <a href="c:\Users\PC TOSHIBA\Downloads\HTML cheat sheet.pdf" target="_blank">Download Resume (PDF)</a>
+    </section>
+
+    <section id="Contact">
+        <h5>Contact Me</h5>
+        <form action="/submit" method="post">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Type your Name" required>
+
+            <label for="Mail">Mail:</label>
+            <input type="email" id="Mail" name="Mail" placeholder="Type your Mail" required>
+
+            <label for="Message">Message:</label>
+            <input type="text" id="Message" name="Message" placeholder="Type your Message" required>
+
+            <button type="submit">Post</button>
+        </form>
+    </section>
+    
+            <!--Creation de footer-->
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+  
+
+
+</body>
+</html>
